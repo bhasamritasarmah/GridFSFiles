@@ -1,0 +1,24 @@
+﻿@model StudentModel
+
+<div>
+	@using(Html.BeginForm("InputForm", "Students", FormMethod.Post))
+	{
+		<table>
+			<tr>
+				<th colspan="2" align="center">Person Details</th>
+			</tr>
+			<tr>
+				<td>Person Name: </td>
+				<td>@Html.TextBoxFor(m => m.Name)</td>
+			</tr>
+			<tr>
+				<td>Place (City): </td>
+				<td>@Html.TextBoxFor(m => m.City)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type ="submit" value="Submit" /></td>
+			</tr>
+		</table>
+	}
+</div>

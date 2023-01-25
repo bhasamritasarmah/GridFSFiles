@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Using GridFS and MongoDB.props" />
+</Project>
